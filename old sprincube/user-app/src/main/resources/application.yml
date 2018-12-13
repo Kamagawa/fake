@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: user-app
+
+
+server:
+  port: 8080
+
+management:
+  security:
+    enabled: false
+
+
+
+#accountService:
+#  baseUrl: http://account-service/
+accountService_host: ${ACCOUNT_SERVICE_SERVICE_HOST}
+accountService_port: ${ACCOUNT_SERVICE_SERVICE_PORT}
+friendService:
+  baseUrl: http://friend-service:8081/
+
